@@ -13,6 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/Admin', function(){
+    return view('Master Project');
+});
+
+Route::get('/AM', function(){
+    return view('MasterProject');
+});
+
+Route::get('/MasterProject', function(){
+    return view('mprojec');
+});
+
+//tugas//
+Route::get('/Home', function(){
+    return view('Home');
+});
+
+Route::get('/Master Project', function(){
+    return view('Master Project');
+});
+
+Route::get('/Master Service', function(){
+    return view('Master Service');
 });
